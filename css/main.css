@@ -1,0 +1,260 @@
+@import url(./font.css);
+/* 
+'s-coredream-3light'
+'s-coredream-4regular'
+'s-coredream-5medium'
+'s-coredream-6bold' 
+*/
+
+
+
+/* ---------- fixed nav ---------- */
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px; right: auto; bottom: 0px; left: 0px; 
+    width: 125px; height: 100vh;
+    background: radial-gradient(115.09% 115.09% at 0% -9.47%, 
+    rgba(162, 220, 233, 0.4) 0%, rgba(162, 220, 233, 0) 100%);
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+}
+.nav > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav .lnb {
+    position: relative;
+    width: 100px; height: 700px;
+}
+.nav .lnb li {
+    position: relative;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 90px 0px 0px 16px;
+    margin-bottom: 50px;
+}
+.nav .lnb li a {
+    display: block;
+    width: 70px;
+    transform: rotate(270deg);
+    text-align: center;
+}
+.nav .lnb li a:hover {
+    font-family: 's-coredream-4regular';
+}
+.nav .gnb {}
+.nav .gnb li {
+    width: 40px; height: 40px;
+    margin-bottom: 30px;
+}
+.nav .gnb li img {width: 100%;}
+/* ---------- fixed nav ---------- */
+
+/* ---------- container ---------- */
+.container {
+    width: 100%; height: 100%;
+}
+.container .section {
+    position: relative;
+    width: 100%; height: 100vh;
+    /* overflow: hidden; */
+}
+.container .section .section_bg {
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%; height: 100%;
+}
+.container .section .inner {
+    position: relative;
+    width: 1200px; height: 100%;
+    margin: 0px auto;
+}
+/* ---------- #main ---------- */
+.container #main {}
+.container #main .section_bg {} 
+.container #main .section_bg .big{
+    position: absolute; top: 85px; right: 65px;
+    width: 690px; height: 690px;
+    background: radial-gradient(50% 50% at 50% 50%, #78D4E9 0%,
+    rgba(120, 212, 233, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.8;
+} 
+.container #main .section_bg .small{
+    position: absolute; 
+    right: 600px; bottom: 75px;
+    width: 500px; height: 500px;
+    background: radial-gradient(35.42% 35.42% at 50% 50%, #F8E646 0%,
+    rgba(248, 230, 70, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.5;
+} 
+.container #main .inner .hello {
+    display: none;
+}
+/* ---------- #main ---------- */
+
+/* ---------- #about ---------- */
+.container #about {
+    background: url(./images/about_bg.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* ---------- #about ---------- */
+
+/* ---------- #skills ---------- */
+.container #skills {
+    
+}
+/* ---------- #skills ---------- */
+
+/* ---------- #project_list ---------- */
+.container #project_list {}
+.container #project_list .section_bg .big{
+    position: absolute; top: 30px; left: 200px;
+    width: 690px; height: 690px;
+    background: radial-gradient(50% 50% at 50% 50%, #78D4E9 0%,
+    rgba(120, 212, 233, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.8;
+} 
+.container #project_list .section_bg .small{
+    position: absolute; 
+    right: 0px; bottom: 0px;
+    width: 500px; height: 500px;
+    background: radial-gradient(35.42% 35.42% at 50% 50%, #F8E646 0%,
+    rgba(248, 230, 70, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.5;
+}
+/* ---------- #project_list ---------- */
+
+/* ---------- #proj_minumsa ---------- */
+.container #proj_minumsa {}
+.container #proj_minumsa .section_bg .big{
+    position: absolute; top: 30px; left: 200px;
+    width: 690px; height: 690px;
+    background: radial-gradient(50% 50% at 50% 50%, #78D4E9 0%,
+    rgba(120, 212, 233, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.8;
+} 
+.container #proj_minumsa .section_bg .small{
+    position: absolute; 
+    right: 0px; bottom: 0px;
+    width: 500px; height: 500px;
+    background: radial-gradient(35.42% 35.42% at 50% 50%, #F8E646 0%,
+    rgba(248, 230, 70, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.5;
+}
+/* ---------- #proj_minumsa ---------- */
+
+/* ---------- #proj_jomalone ---------- */
+.container #proj_jomalone {}
+.container #proj_jomalone .section_bg .big{
+    position: absolute; top: 30px; left: 200px;
+    width: 690px; height: 690px;
+    background: radial-gradient(50% 50% at 50% 50%, #78D4E9 0%,
+    rgba(120, 212, 233, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.8;
+} 
+.container #proj_jomalone .section_bg .medium{
+    position: absolute; 
+    right: 0px; bottom: 0px;
+    width: 500px; height: 500px;
+    background: radial-gradient(35.42% 35.42% at 50% 50%, #F8E646 0%,
+    rgba(248, 230, 70, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.5;
+} 
+.container #proj_jomalone .section_bg .small{
+    position: absolute; 
+    right: 0px; bottom: 0px;
+    width: 500px; height: 500px;
+    background: radial-gradient(35.42% 35.42% at 50% 50%, #F8E646 0%,
+    rgba(248, 230, 70, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.5;
+}
+/* ---------- #proj_jomalone ---------- */
+
+/* ---------- #proj_login ---------- */
+.container #proj_login {}
+.container #proj_login .section_bg .big{
+    position: absolute; top: 30px; left: 200px;
+    width: 690px; height: 690px;
+    background: radial-gradient(50% 50% at 50% 50%, #78D4E9 0%,
+    rgba(120, 212, 233, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.8;
+} 
+.container #proj_login .section_bg .medium{
+    position: absolute; 
+    right: 0px; bottom: 0px;
+    width: 500px; height: 500px;
+    background: radial-gradient(35.42% 35.42% at 50% 50%, #F8E646 0%,
+    rgba(248, 230, 70, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.5;
+} 
+.container #proj_login .section_bg .small{
+    position: absolute; 
+    right: 0px; bottom: 0px;
+    width: 500px; height: 500px;
+    background: radial-gradient(35.42% 35.42% at 50% 50%, #F8E646 0%,
+    rgba(248, 230, 70, 0) 100%);
+    border-radius: 50%;
+    opacity: 0.5;
+} 
+/* ---------- #proj_login ---------- */
+
+/* ---------- #contect ---------- */
+.container #contect {}
+.container #contect .section_bg .pink_bg {
+    position: absolute;
+    width: 70%; height: 85%;
+    top: 50%; left: 0px; 
+    transform: translateY(-50%);
+    background: linear-gradient(139.27deg,
+    #FBBCDF 7.19%,#FFB3DD 9.07%, #FFEAF6 79.38%);
+    border-radius: 0px 300px 300px 0px;
+    z-index: -1;
+} 
+.container #contect .inner .contect_txt {
+    position: absolute;
+    top: 218px; right: -5%;
+    width: 735px; height: 500px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.container #contect .inner .contect_txt .computer {
+    position: absolute;
+    bottom: -95px; left: -465px;
+    width: 665px; height: 350px;
+} 
+.container #contect .inner .contect_txt .person {
+    position: absolute;
+    bottom: -165px; right: -45px;
+    width: 231px; height: 354px;
+} 
+.container #contect .inner .contect_txt img {width: 100%; height: auto;}
+.container #contect p {
+    position: absolute;
+    bottom: 15px; left: 180px;
+}
+/* ---------- #contect ---------- */
+/* ---------- #container ---------- */
