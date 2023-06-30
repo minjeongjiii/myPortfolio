@@ -38,4 +38,17 @@ document.addEventListener('DOMContentLoaded', function(){
   window.addEventListener('scroll','wheel', (e)=>{
     const delta = e.deltaY * 0.2;
   }); */
+
+  /* 현재 년/월/일 정보 가져오기 */
+  const date = new Date;
+  const year = date.getFullYear();
+  const month = ('0' + (date.getMonth()+1)).slice(-2);
+  const day = ('0' + date.getDate()).slice(-2);
+  const dateStr = year + '-' + month + '-' + day;
+
+  let today = this.getElementById('today')
+  let dateText = document.createTextNode(dateStr)
+
+  today.appendChild(dateText)
+
 });
