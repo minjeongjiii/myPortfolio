@@ -168,9 +168,9 @@
     width: 300px; height: 194px;
     font-size: 20px;
     color: #FFE174;
-    background: radial-gradient(94.36% 94.36% at 3.68% 2.09%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(94.36% 94.36% at 3.68% 2.09%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     border-radius: 3px;
 }
 .container #about .inner .about_me .my_info li {}
@@ -180,10 +180,11 @@
     position: relative;
 }
 .container #about .inner .about_me .my_career::after {
-    position: absolute; top: 0px; left: 0px;    
+    position: absolute; top: 63px; left: 0px;    
     content: '';
-    width: 80%; height: 1px;
+    width: 100%; height: 3px;
     background: #000;
+    border-radius: 3px;
 }
 .container #about .inner .about_me .my_career ul {
     display: flex;
