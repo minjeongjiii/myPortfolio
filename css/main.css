@@ -118,20 +118,91 @@
 }
 /* ---------- #main ---------- */
 
-/* ---------- #about ---------- */
-.container #about {
+/* ---------- #about_character ---------- */
+.container #about_character {
     position: absolute;
     top: 0px; left: 0px;
     overflow: hidden;
 }
-.container #about .inner {
+.container #about_character .inner {
     position: absolute;
     bottom: 75px; right: 135px;
     width: 700px; height: 500px;
     background-color: #F8E646;
-    /* background: url(./images/about_bg.jpg)no-repeat;
+}
+
+/* ---------- #about_character ---------- */
+
+/* ---------- #about ---------- */
+.container #about {
+    background: url(./images/about_bg.jpg)no-repeat;
     background-size: cover;
-    background-position: center; */
+    background-position: center; 
+}
+.container #about .inner {padding-top: 50px;}
+.container #about .inner .about_me {
+    width: 100%; height: 100%;
+    margin-top: 70px;
+}
+.container #about .inner .about_me .my_profile {
+    display: flex;
+}
+.container #about .inner .about_me .my_profile .my_photo {
+    width: 300px; height: 300px;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px 0px;
+}
+.container #about .inner .about_me .my_profile .my_edu {}
+.container #about .inner .about_me .my_profile .my_edu li {}
+.container #about .inner .about_me .my_profile .my_edu li:nth-child(1) {font-size: 20px; color: #FFE174;}
+.container #about .inner .about_me .my_profile .my_edu li:nth-child(3) {font-size: 20px; color: #FFE174;}
+.container #about .inner .about_me .my_profile .my_edu li:nth-child(2) {display: flex;}
+.container #about .inner .about_me .my_profile .my_edu li:nth-child(4) {display: flex;}
+.container #about .inner .about_me .my_profile .my_edu li p {font-size: 30px; color: #fff;}
+.container #about .inner .about_me .my_profile .my_edu li p span {
+    display: block;
+    font-size: 14px;
+}
+.container #about .inner .about_me .my_info {
+    width: 300px; height: 194px;
+    font-size: 20px;
+    color: #FFE174;
+    background: radial-gradient(94.36% 94.36% at 3.68% 2.09%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(5px);
+    border-radius: 3px;
+}
+.container #about .inner .about_me .my_info li {}
+.container #about .inner .about_me .my_career  {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.container #about .inner .about_me .my_career::after {
+    position: absolute; top: 0px; left: 0px;    
+    content: '';
+    width: 80%; height: 1px;
+    background: #000;
+}
+.container #about .inner .about_me .my_career ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container #about .inner .about_me .my_career ul li {}
+.container #about .inner .about_me .my_career ul li:nth-child(2) {
+    position: relative;
+    margin-bottom: 40px;
+}
+.container #about .inner .about_me .my_career ul li:nth-child(2)::after {
+    position: absolute; top: 32px; left: 0px; right: 0px;
+    content: '';
+    width: 20px; height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 0px auto;
 }
 /* ---------- #about ---------- */
 

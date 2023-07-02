@@ -6,8 +6,8 @@ $(function() {
     }) 
 });
 
-/* mousewheel */
-/* $(function() {
+/* mousewheel */ 
+$(function() {
     $('.container section').mousewheel(function(event,delta){
       if(delta>0)  { 
         let prev = $(this).prev().offset().top
@@ -21,7 +21,7 @@ $(function() {
         },1000)
       }
     })
-}); */
+}); 
 
 document.addEventListener('DOMContentLoaded', function(){
   
