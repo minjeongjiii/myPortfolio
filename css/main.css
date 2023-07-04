@@ -49,6 +49,7 @@
     display: block;
     width: 70px;
     transform: rotate(270deg);
+    font-family: 's-coredream-3light';
     text-align: center;
 }
 .nav .lnb li a:hover {
@@ -141,8 +142,8 @@
 }
 .container #about .inner {padding-top: 50px;}
 .container #about .inner .about_me {
-    width: 100%; height: 100%;
-    margin-top: 70px;
+    width: 100%; 
+    margin-top: 35px;
 }
 .container #about .inner .about_me .my_profile {
     display: flex;
@@ -152,28 +153,54 @@
     background: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px 0px;
+    margin-bottom: 27px;
 }
-.container #about .inner .about_me .my_profile .my_edu {}
+.container #about .inner .about_me .my_profile .my_edu {margin-left: 35px;}
 .container #about .inner .about_me .my_profile .my_edu li {}
-.container #about .inner .about_me .my_profile .my_edu li:nth-child(1) {font-size: 20px; color: #FFE174;}
-.container #about .inner .about_me .my_profile .my_edu li:nth-child(3) {font-size: 20px; color: #FFE174;}
-.container #about .inner .about_me .my_profile .my_edu li:nth-child(2) {display: flex;}
-.container #about .inner .about_me .my_profile .my_edu li:nth-child(4) {display: flex;}
-.container #about .inner .about_me .my_profile .my_edu li p {font-size: 30px; color: #fff;}
+.container #about .inner .about_me .my_profile .my_edu li:nth-child(1) {
+    font-size: 20px; 
+    color: #FFE174;
+    margin-bottom: 30px;
+}
+    
+.container #about .inner .about_me .my_profile .my_edu li:nth-child(3) {
+    font-size: 20px; 
+    color: #FFE174;
+    margin-bottom: 30px;
+}
+    
+.container #about .inner .about_me .my_profile .my_edu li:nth-child(2) {
+    display: flex;
+    padding-left: 33px;
+    margin-bottom: 80px;
+}
+.container #about .inner .about_me .my_profile .my_edu li:nth-child(4) {
+    display: flex;
+    padding-left: 33px;
+}
+.container #about .inner .about_me .my_profile .my_edu li p {
+    font-size: 30px; 
+    color: #fff;
+    margin-right: 40px;
+}
 .container #about .inner .about_me .my_profile .my_edu li p span {
     display: block;
     font-size: 14px;
 }
 .container #about .inner .about_me .my_info {
-    width: 300px; height: 194px;
+    width: 300px; height: 190px;
     font-size: 20px;
     color: #FFE174;
     background: radial-gradient(94.36% 94.36% at 3.68% 2.09%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
     backdrop-filter: blur(15px);
     border-radius: 3px;
+    margin-bottom: 65px;
 }
-.container #about .inner .about_me .my_info li {}
+.container #about .inner .about_me .my_info li {
+    height: 47.5px; line-height: 47.5px;
+    padding-left: 20px;
+}
 .container #about .inner .about_me .my_career  {
     display: flex;
     justify-content: space-around;
