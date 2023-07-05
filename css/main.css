@@ -1,4 +1,5 @@
 @import url(./font.css);
+@import url(./animation.css);
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 /* 
 's-coredream-3light'
@@ -131,7 +132,6 @@
     width: 700px; height: 500px;
     background-color: #F8E646;
 }
-
 /* ---------- #about_character ---------- */
 
 /* ---------- #about ---------- */
@@ -162,13 +162,11 @@
     color: #FFE174;
     margin-bottom: 30px;
 }
-    
 .container #about .inner .about_me .my_profile .my_edu li:nth-child(3) {
     font-size: 20px; 
     color: #FFE174;
     margin-bottom: 30px;
 }
-    
 .container #about .inner .about_me .my_profile .my_edu li:nth-child(2) {
     display: flex;
     padding-left: 33px;
@@ -212,12 +210,16 @@
     width: 100%; height: 3px;
     background: #000;
     border-radius: 3px;
+    transform-origin: left;
+    animation: career_line 8s linear;
 }
 .container #about .inner .about_me .my_career ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
+    opacity: 0;
 }
 .container #about .inner .about_me .my_career ul li {}
 .container #about .inner .about_me .my_career ul li:nth-child(2) {
@@ -232,12 +234,130 @@
     border-radius: 50%;
     margin: 0px auto;
 }
+.container #about .inner .about_me .my_career .line01 {animation: career_txt01 1s 0.96s forwards}
+.container #about .inner .about_me .my_career .line02 {animation: career_txt01 1s 1.35s forwards}
+.container #about .inner .about_me .my_career .line03 {animation: career_txt01 1s 1.9s forwards}
+.container #about .inner .about_me .my_career .line04 {animation: career_txt01 1s 2.38s forwards}
+.container #about .inner .about_me .my_career .line05 {animation: career_txt01 1s 2.7s forwards}
 /* ---------- #about ---------- */
 
 /* ---------- #skills ---------- */
 .container #skills {
-    
+    height: 950px;
+    overflow: hidden;
 }
+.container #skills > img {
+    position: absolute; top: 0px; left: 0px;
+    width: 100%;
+    z-index: -1;
+}
+.container #skills .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container #skills .inner .skills_box {
+    width: 1146px; height: 627px;
+    background: radial-gradient(94.36% 94.36% at 3.68% 2.09%, 
+    rgba(28, 0, 50, 0.2) 0%, rgba(42, 16, 63, 0.1875) 6.25%, rgba(42, 16, 63, 0.4) 100%);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid #777;
+}
+.container #skills .inner .skills_box .progress_bar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; height: auto;
+    box-sizing: border-box;
+    padding: 36px 0px 0px 30px;
+}
+.container #skills .inner .skills_box .progress_bar li {
+    position: relative;
+    width: 215px; height: 175px;
+}
+.container #skills .inner .skills_box .progress_bar li .bar_bg {
+    position: absolute; top: 0px; left: 0px;
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+.container #skills .inner .skills_box .progress_bar li .bar_bg.b01 {
+    border: 20px solid rgba(255, 31, 31, 0.5);
+}
+.container #skills .inner .skills_box .progress_bar li .bar_bg.b02 {
+    border: 20px solid rgba(89, 31, 255, 0.4);
+}
+.container #skills .inner .skills_box .progress_bar li .bar_bg.b03 {
+    border: 20px solid rgba(227, 205, 0, 0.4);
+}
+.container #skills .inner .skills_box .progress_bar li .bar_bg.b04 {
+    border: 20px solid rgba(133, 157, 112, 0.4);
+}
+.container #skills .inner .skills_box .progress_bar li svg {
+    position: absolute; top: 0px; left: 0px;
+}
+.container #skills .inner .skills_box .progress_bar li svg circle.circle01 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    transform-origin: center center;
+    transform: rotate(280deg);
+    animation: progress01 2s linear forwards;
+}
+.container #skills .inner .skills_box .progress_bar li svg circle.circle02 {
+    fill: none;
+    stroke: url(#GradientColor02);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    transform-origin: center center;
+    transform: rotate(280deg);
+    animation: progress02 2s linear forwards;
+}
+.container #skills .inner .skills_box .progress_bar li svg circle.circle03 {
+    fill: none;
+    stroke: url(#GradientColor03);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    transform-origin: center center;
+    transform: rotate(280deg);
+    animation: progress03 2s linear forwards;
+}
+.container #skills .inner .skills_box .progress_bar li svg circle.circle04 {
+    fill: none;
+    stroke: url(#GradientColor04);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    transform-origin: center center;
+    transform: rotate(280deg);
+    animation: progress04 2s linear forwards;
+}
+.container #skills .inner .skills_box .progress_bar li .bar_img {
+    position: absolute; top: 40px; left: 75px;
+    width: 120px; height: 150px;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+    z-index: 5;
+}
+.container #skills .inner .skills_box .progress_bar li .bar_img img {
+    width: 120px; height: 150px;
+}.container #skills .inner .skills_box .tools {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 47px;
+}
+.container #skills .inner .skills_box .tools li {
+    width: 120px; height: 150px;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+}
+.container #skills .inner .skills_box .tools img {
+    width: 100%;
+}
+
 /* ---------- #skills ---------- */
 
 /* ---------- #project_list ---------- */
@@ -364,20 +484,25 @@
 
 /* ---------- #project_list ---------- */
 
-/* ---------- #proj_minumsa ---------- */
-.container #proj_minumsa {}
-.container #proj_minumsa .section_bg .big {
-    position: absolute; 
-    bottom: 148px; right: -35px;
-    width: 432px; height: 432px;
-} 
-.container #proj_minumsa .section_bg .big img {width: 100%;}
-.container #proj_minumsa .section_bg .small {
-    position: absolute; 
-    bottom: 53px; right: 253px;
+/* ---------- #proj_공통스티일 ---------- */
+.container .work .inner .proj_preview {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
-/* ---------- #proj_minumsa ---------- */
-
+.container .work .inner .proj_preview .view_left {
+    width: 500px; height: 465px;
+    background-color: #ccc;
+}
+.container .work .inner .proj_preview .view_right {
+    width: 650px; height: 465px;
+    background-color: #ccc;
+}
+.container .work .inner .proj_preview .view_right {
+    width: 650px; height: 465px;
+    background-color: #ccc;
+}
+/* ---------- #proj_공통스티일 ---------- */
 /* ---------- #proj_jomalone ---------- */
 .container #proj_jomalone {}
 .container #proj_jomalone .section_bg .big {
@@ -393,6 +518,20 @@
     bottom: 362px; left: 230px; 
 }
 /* ---------- #proj_jomalone ---------- */
+
+/* ---------- #proj_minumsa ---------- */
+.container #proj_minumsa {}
+.container #proj_minumsa .section_bg .big {
+    position: absolute; 
+    bottom: 148px; right: -35px;
+    width: 432px; height: 432px;
+} 
+.container #proj_minumsa .section_bg .big img {width: 100%;}
+.container #proj_minumsa .section_bg .small {
+    position: absolute; 
+    bottom: 53px; right: 253px;
+}
+/* ---------- #proj_minumsa ---------- */
 
 /* ---------- #proj_login ---------- */
 .container #proj_login {}
@@ -483,47 +622,3 @@
 /* ---------- #container ---------- */
 
 
-/* ---------- animation ---------- */
-@keyframes dongdong {
-    0% {
-        transform: translateY(5px);
-    }
-
-    20% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
-
-    75% {
-        transform: translateY(0px);
-    }
-
-    100% {
-        transform: translateY(5px);
-    }
-}
-@keyframes dingding {
-    0% {
-        transform: rotate(5deg);
-    }
-
-    20% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(-5deg);
-    }
-
-    75% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(5deg);
-    }
-}
-/* ---------- animation ---------- */

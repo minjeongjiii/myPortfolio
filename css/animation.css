@@ -1,0 +1,75 @@
+/* ---------- animation ---------- */
+@keyframes career_line {
+  0%, 10% {
+      transform: scaleX(0);
+  }
+  40% {
+      transform: scaleX(1);
+  }
+} 
+@keyframes progress01 {
+  100% {
+    stroke-dashoffset: 60;
+  }
+}
+@keyframes progress02 {
+  100% {
+    stroke-dashoffset: 60;
+  }
+}
+@keyframes progress03 {
+  100% {
+    stroke-dashoffset: 65;
+  }
+}
+@keyframes progress04 {
+  100% {
+    stroke-dashoffset: 70;
+  }
+}
+@keyframes career_txt01 {
+  100% {opacity: 1;}
+}
+@keyframes dongdong {
+  0% {
+      transform: translateY(5px);
+  }
+
+  20% {
+      transform: translateY(0px);
+  }
+
+  50% {
+      transform: translateY(-5px);
+  }
+
+  75% {
+      transform: translateY(0px);
+  }
+
+  100% {
+      transform: translateY(5px);
+  }
+}
+@keyframes dingding {
+  0% {
+      transform: rotate(5deg);
+  }
+
+  20% {
+      transform: rotate(0deg);
+  }
+
+  50% {
+      transform: rotate(-5deg);
+  }
+
+  75% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(5deg);
+  }
+}
+/* ---------- animation ---------- */
